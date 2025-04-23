@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML-CSS</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: url('fondo.gif');
+            padding-top: 70px;
+        }
+		
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            padding: 15px;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header {
+            background-color: #129fad;
+            color: 2c3e50;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px auto 20px;
+            width: 90%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        ul, ol {
+            background-color: #87CEEB;
+            padding: 15px;
+            border: 1px solid #5D8AA8;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        form {
+            background-color: #87CEEB;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #5D8AA8;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #5D8AA8;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #219a52;
+        }
+
+        img {
+            max-width: 59%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        video {
+            border: 2px solid #333;
+            border-radius: 10px;
+            width: 40%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#frames">Frames</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1><img src="logo.jpg" alt="Logo" style="vertical-align: middle; width: 100px;"> Mi Sitio Web</h1>
+    </header>
+
+    <!-- Listas -->
+    <section id="listas">
+        <h2>Listas</h2>
+        <h3>Ordenada:</h3>
+        <ol>
+            <li>Oro</li>
+            <li>Plata</li>
+            <li>Cobre</li>
+            <li>Hierro</li>
+        </ol>
+        
+        <h3>No ordenada:</h3>
+        <ul>
+            <li>Manzana</li>
+            <li>Banana</li>
+            <li>Melon</li>
+            <li>Sandia</li>
+        </ul>
+    </section>
+
+    <!-- Enlaces -->
+    <section id="enlaces">
+        <h2>Enlaces</h2>
+        <a href="https://www.youtube.com">Visitar YouTube</a><br><br>
+        <a href="#formulario">Ir al formulario</a>
+    </section>
+
+    <!-- Tablas -->
+    <section id="tablas">
+        <h2>Tabla Moderna</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Personalidad</th>
+            </tr>
+            <tr>
+                <td>Rick Sanchez</td>
+                <td>70</td>
+                <td>Cientifico loco, sociopatico, alcoholico y drogadicto</td>
+            </tr>
+            <tr>
+                <td>Morty Smith</td>
+                <td>14</td>
+                <td>Torpe, ansioso y de baja autoestima</td>
+            </tr>
+            <tr>
+                <td>Jerry Smith</td>
+                <td>35</td>
+                <td>Poco inteligente pero leal a su familia</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Iframe -->
+    <section id="frames">
+        <h2>Contenido Externo</h2>
+        <iframe src="https://www.wikipedia.org"></iframe>
+    </section>
+
+    <!-- Multimedia -->
+    <section id="multimedia">
+        <h2>Multimedia</h2>
+        <img src="Rick.gif" alt="Rick">
+        <video controls width="500">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Formulario -->
+    <section id="formulario">
+        <h2>Formulario Interactivo</h2>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" name="nombre">
+            
+            <label>Email:</label>
+            <input type="email" name="email">
+            
+            <label>Contraseña:</label>
+            <input type="password" name="password">
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>2025</p>
+    </footer>
+</body>
+</html>
